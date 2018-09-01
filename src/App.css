@@ -1,0 +1,44 @@
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% {opacity: 0.10; }
+  20% {opacity: 0.20; }
+  30% {opacity: 0.30; }
+  40% {opacity: 0.40; }
+  50% {opacity: 0.50; }
+  60% {opacity: 0.60; }
+  70% {opacity: 0.70; }
+  80% {opacity: 0.80; }
+  90% {opacity: 0.90; }
+  100% { opacity: 1; }
+  
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+.App {
+  background-color: #989898;
+}

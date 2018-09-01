@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-pdf": "^3.0.5",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-transition-group": "^2.4.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=client/src/scripts react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-social-icons": "^3.0.0"
+  }
+}

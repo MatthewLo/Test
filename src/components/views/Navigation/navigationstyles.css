@@ -1,0 +1,165 @@
+.Navigation {
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	margin-top: 6px;
+	z-index: 1;
+}
+
+.navbar_navigation {
+	height: 100%;
+	padding: 0 1rem;
+	justify-content: center;
+}
+
+.navbar_navigation-items ul {
+	list-style: none;
+	margin: 0;
+	padding-top: 1.5vh;
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FAFAFA;
+}
+
+.mid {
+	padding: 0 2.5rem;
+}
+
+.navbar_navigation-items li a {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #FAFAFA;
+}
+
+.leftedge {
+	padding-right: 2.5rem;
+	padding-left: 2px;
+}
+
+.rightedge {
+	padding-left: 2.5rem;
+	padding-right: 2px;
+}
+
+.navbar_navigation-items a:hover {
+	color: rgba(17, 17, 17, 0.7);
+	animation: bounce 1.5s infinite;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+.navbar_navigation-items li a.active {
+	color: rgba(17, 17, 17, 0.7);
+}
+
+.toggle-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 24px;
+	width: 30px;
+	background: transparent;
+	border: none;	
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	box-sizing: border-box;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+}
+
+.buttonline {
+	width: 24px;
+	height: 2px;
+	background: #FAFAFA;
+}
+
+.hamburgerButton {
+	left: 0;
+	padding-left: 1vw;
+	padding-top: 1vh;
+	position: absolute;
+	justify-content: center;
+	outline: none;
+}
+
+.NavMenu {
+	height: 45vh;
+	width: 100%;
+	background: rgba(64, 64, 64, 0.95);
+	box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+.NavMenu ul {
+	padding: 0;
+	align-items: center;
+}
+
+.NavMenu-entering {
+	transform: translateY(0);
+	transition: transform 0.3s ease-out;
+}
+
+.NavMenu-exiting {
+	transform: translateY(-100%);
+	transition: transform 0.3s ease-out;
+}
+
+.NavMenu-exited {
+	transform: translateY(-100%);
+}
+
+.NavMenu ul li {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 3vh;
+	margin-bottom: 5vh;
+}
+
+.NavMenu ul li a {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	color: rgba(17, 17, 17, 1);
+	color: #FAFAFA;
+	font-weight: 600;
+	font-size: 1.2em;
+
+}
+
+.NavMenu ul li a.active {
+	color: #A0A0A0;
+}
+
+.NavMenu ul li a:hover {
+	color: #A0A0A0;
+	animation: bounce 1.5s infinite;
+}
+
+@media (max-width: 840px) {
+	.navbar_navigation-items {
+		display: none;
+	}
+}
+
+@media (min-width: 842px) {
+	.hamburgerButton {
+		display: none;
+	}
+
+	.NavMenu {
+		display: none;
+	}
+}
